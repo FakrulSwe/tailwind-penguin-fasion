@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penguin Fashion</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Color change -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                price: '#FABE4C',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header  class="container mx-auto bg-amber-100">
+        <!-- Nav -->
+        <nav class="container md:flex justify-between items-center p-12 pt-8 ">
+            <div class="w-56">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="md:flex gap-16">
+                <div>Home</div>
+                <div>Product</div>
+                <div>About us</div>
+                <div>Contact us</div>
+            </div>
+
+        </nav>
+
+        <!-- Banner -->
+        <div class="md:flex justify-center items-center mt-12 py-12 px-12 mx-auto container">
+            <div class="space-y-6 px-4">
+                <h1 class="text-5xl md:text-7xl font-semibold uppercase">
+                    <span class="text-amber-400">Be the Penguins</span>
+                    <br>
+                    of Winter
+                </h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, vero.</p>
+                <button class="py-4 px-8 text-white uppercase bg-gradient-to-r from-[#46bc99] to-[#2219a0] rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 inline">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                    </svg>
+
+                    Buy Now</button>
+            </div>
+            <div>
+                <img class="w-3/4 md:w-full pt-5" src="images/model.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <!-- Body Section -->
+    <main class="container mx-auto px-5">
+
+        <!-- Women Jacket Section -->
+        <section class="-scroll-mt-12  pt-16">
+            <h2 class="text-5xl font-semibold uppercase p-5 text-center">Women Jacket</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Jacket Card-1 -->
+                <div class="rounded-2xl drop-shadow-xl p-4">
+                    <div class="bg-slate-100 p-4 rounded-2xl">
+                        <img src="images/jacket-1.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl pt-10">Yellow Coat Jacket</h3>
+                        <p>Lorem Ipsum is simply dummy text of the 
+                            printing and typesetting industry.</p>
+                            <div class="flex justify-between pt-5">
+                                <h2 class="text-4xl font-semibold text-price">$180</h2>
+                                <button class="py-4 px-8 text-white uppercase bg-gradient-to-r from-[#bc6b46] to-[#a01995] rounded-lg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                        stroke="currentColor" class="w-6 h-6 inline">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                                    </svg>
+                
+                                    Buy Now</button>
+                            </div>
+                    </div>
+                </div>
+                <!-- Jacket Card-2 -->
+                <div class="rounded-2xl p-4 drop-shadow-xl">
+                    <div class="bg-slate-100 p-4 rounded-2xl">
+                        <img src="images/jacket-2.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl pt-10">Ladies Jacket </h3>
+                        <p>Lorem Ipsum is simply dummy text of the 
+                            printing and typesetting industry.</p>
+                            <div class="flex justify-between pt-5">
+                                <h2 class="text-4xl font-semibold text-price">$234</h2>
+                                <button class="py-4 px-8 text-white uppercase bg-gradient-to-r from-[#8346bc] to-[#a01951] rounded-lg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                        stroke="currentColor" class="w-6 h-6 inline">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                                    </svg>
+                
+                                    Buy Now</button>
+                            </div>
+                    </div>
+                </div>
+                <!-- Jacket Card-3 -->
+                <div class="rounded-2xl p-4 drop-shadow-xl">
+                    <div class="bg-slate-100 p-4 rounded-2xl">
+                        <img src="images/jacket-3.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl pt-10">Woman Leather Jacket </h3>
+                        <p>Lorem Ipsum is simply dummy text of the 
+                            printing and typesetting industry.</p>
+                            <div class="flex justify-between pt-5">
+                                <h2 class="text-4xl font-semibold text-price">$250</h2>
+                                <button class="py-4 px-8 text-white uppercase bg-gradient-to-r from-[#bc4646] to-[#92a019] rounded-lg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                        stroke="currentColor" class="w-6 h-6 inline">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                                    </svg>
+                
+                                    Buy Now</button>
+                            </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Men Jacket -->
+        <section class="-scroll-mt-12 pt-16">
+            <h2 class="text-5xl font-semibold uppercase p-5 text-center">Men Jacket</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Jacket Card-1 -->
+                <div class="rounded-2xl drop-shadow-xl p-4">
+                    <div class="bg-slate-100 p-4 rounded-2xl">
+                        <img src="images/jacket-4.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl pt-10">Snowboard Jacket Mens</h3>
+                        <p>Lorem Ipsum is simply dummy text of the 
+                            printing and typesetting industry.</p>
+                            <div class="flex justify-between pt-5">
+                                <h2 class="text-4xl font-semibold text-price">$300</h2>
+                                <button class="py-4 px-8 text-white uppercase bg-gradient-to-r from-[#46bc69] to-[#ece13a] rounded-lg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                        stroke="currentColor" class="w-6 h-6 inline">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                                    </svg>
+                
+                                    Buy Now</button>
+                            </div>
+                    </div>
+                </div>
+                <!-- Jacket Card-2 -->
+                <div class="rounded-2xl p-4 drop-shadow-xl">
+                    <div class="bg-slate-100 p-4 rounded-2xl">
+                        <img src="images/jacket-5.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl pt-10">Man Leather Jackets</h3>
+                        <p>Lorem Ipsum is simply dummy text of the 
+                            printing and typesetting industry.</p>
+                            <div class="flex justify-between pt-5">
+                                <h2 class="text-4xl font-semibold text-price">$280</h2>
+                                <button class="py-4 px-8 text-white uppercase bg-gradient-to-r from-[#f3db07] to-[#f54040] rounded-lg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                        stroke="currentColor" class="w-6 h-6 inline">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                                    </svg>
+                
+                                    Buy Now</button>
+                            </div>
+                    </div>
+                </div>
+                <!-- Jacket Card-3 -->
+                <div class="rounded-2xl p-4 drop-shadow-xl">
+                    <div class="bg-slate-100 p-4 rounded-2xl">
+                        <img src="images/jacket-6.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl pt-10">Man Casual Jackets</h3>
+                        <p>Lorem Ipsum is simply dummy text of the 
+                            printing and typesetting industry.</p>
+                            <div class="flex justify-between pt-5">
+                                <h2 class="text-4xl font-semibold text-price">$190</h2>
+                                <button class="py-4 px-8 text-white uppercase bg-gradient-to-r from-[#03f5f5] to-[#f53ecd] rounded-lg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                        stroke="currentColor" class="w-6 h-6 inline">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                                    </svg>
+                
+                                    Buy Now</button>
+                            </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Shopping Us -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-5 pt-28">
+            <div class="order-2 md:order-1 bg-slate-200 h-32 flex p-6 rounded-2xl shadow-2xl">
+                <img src="images/house.png" alt="">
+                <div>
+                   <h3 class="text-2xl">Find the Perfect Fit</h3>
+                   <p>Everybody is different, which is why we
+                    offer styles for every body.</p> 
+                </div>
+                </div>
+            <div class="order-1 md:order-2 bg-slate-200 row-span-3 p-6 rounded-2xl">
+                <img src="images/shopping.png" alt="">
+            </div>
+            <div class="order-3 bg-slate-200 h-32 flex p-6 rounded-2xl shadow-2xl">
+                <img src="images/house.png" alt="">
+                <div>
+                   <h3 class="text-2xl">Find the Perfect Fit</h3>
+                   <p>Everybody is different, which is why we
+                    offer styles for every body.</p> 
+                </div>
+                </div>
+                <div class="order-4 bg-slate-200 h-32 flex p-6 rounded-2xl shadow-2xl">
+                    <img src="images/house.png" alt="">
+                    <div>
+                       <h3 class="text-2xl">Find the Perfect Fit</h3>
+                       <p>Everybody is different, which is why we
+                        offer styles for every body.</p> 
+                    </div>
+                    </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="container md:mx-auto rounded-lg mt-16">
+        <div class="md:flex justify-between p-12 px-32 bg-black text-cyan-50">
+            <div class="pt-6">
+                <div class="md:flex  md:gap-10 pb-5 text-3xl font-semibold">
+                    <div><p>Download Now</p></div>
+                    <div><p>License</p></div>
+                </div>
+                <div class="md:flex text-xl gap-7 pb-2">
+                    <div><p>Home</p></div>
+                    <div><p>Product</p></div>
+                    <div><p>About us</p></div>
+                    <div><p>Contact us</p></div>
+                </div>
+                <p class="fs-6">© 2023 Penguin Fashion. <br>
+                    All rights reserved & design by @FakrulSwe</p>
+            </div>
+            <div>
+                <p class="text-3xl pb-3 font-semibold pt-5">Get the App</p>
+                <img class="w-32" src="images/ios.png" alt=""><br>
+                <img class="w-32" src="images/android.png" alt="">
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
